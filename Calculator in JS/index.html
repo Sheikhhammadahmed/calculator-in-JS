@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h2>iPhone Calculator</h2>
+    </div>
+    <div class="main">
+        <div class="inp-field">
+            <input disabled type="text" name="" id="getInp">
+        </div>
+        <div>
+            <button class="light-gray" onclick="clrall()">C</button>
+            <button class="light-gray" onclick="del()">D</button>
+            <button class="light-gray" onclick="mod('%')">%</button>
+            <button class='yellow' onclick="getValue('/')">÷</button>
+        </div>
+        <div>
+            <button class="gray" onclick="getValue(7)">7</button>
+            <button class="gray" onclick="getValue(8)">8</button>
+            <button class="gray" onclick="getValue(9)">9</button>
+            <button class='yellow' onclick="getValue('*')">×</button>
+        </div>
+        <div>
+            <button class="gray" onclick="getValue(4)">4</button>
+            <button class="gray" onclick="getValue(5)">5</button>
+            <button class="gray" onclick="getValue(6)">6</button>
+            <button class='yellow' onclick="getValue('-')">-</button>
+        </div>
+        <div>
+            <button class="gray" onclick="getValue(1)">1</button>
+            <button class="gray" onclick="getValue(2)">2</button>
+            <button class="gray" onclick="getValue(3)">3</button>
+            <button class='yellow' onclick="getValue('+')">+</button>
+        </div>
+        <div>
+            <button id="btn-0" onclick="getValue(0)">0</button>
+            <button class="gray" onclick="getValue('.')">.</button>
+            <button class='yellow' onclick="equal()">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
